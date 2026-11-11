@@ -1,0 +1,5980 @@
+{
+  "schema_version": 1,
+  "source_manifest_sha256": "99cf5e68b65bdaf055c45c5747b822e8d0c6e1cfe2f8f9708d5c7aedc57a0344",
+  "rule": "old stock held through next test start, frozen while suspended, sold at first tradable close",
+  "transition_count": 187,
+  "suspended_at_transition_count": 2,
+  "daily_quote_count": 621,
+  "transitions": [
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sh.600489",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 7.86359548,
+      "original_to_snapshot_price_factor": 1.0183270944461695,
+      "previous_date_alignment_relative_error": 9.516786851904158e-07,
+      "source_snapshot_sha256": "83c2a754b7a9151671f34e5714a6ee86f3b5241b17b41097a4a89d2d81145e31",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 7.828340170057389,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sh.600497",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 3.87509001,
+      "original_to_snapshot_price_factor": 1.0070003071041036,
+      "previous_date_alignment_relative_error": 4.56285489169872e-07,
+      "source_snapshot_sha256": "32ce4e1fe52244d64dc7a0f18ecfcb6d064974620d231c57fd7238a220c0709e",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 3.900979700038757,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sh.600606",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 5.75904168,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "c013b28ecc984337c9c4f641164c786b07e7c33d9608900d35742bfdb4f1a6b7",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 5.7669416,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sh.601988",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 2.54453836,
+      "original_to_snapshot_price_factor": 1.0210152135604176,
+      "previous_date_alignment_relative_error": 1.0355264430383926e-06,
+      "source_snapshot_sha256": "df6b88e9c5595845fb6931349490936b539fa8400e7d9f7c026bc180a278672c",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 2.5655071733467314,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sz.000768",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 14.97316197,
+      "original_to_snapshot_price_factor": 1.0071460308447642,
+      "previous_date_alignment_relative_error": 1.3766351858457426e-07,
+      "source_snapshot_sha256": "42c8ec0066dfd06bae68b939704841b5950ce052d2d9fe0531cce51ab0a2efd4",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 15.197225692103274,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sz.000877",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 10.0592857,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "2aef345c4a24246e5cd15a5c4c68ceb8c3dd08c00d98f4485c8b644faaa4f61c",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 10.06792028,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sz.000960",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 9.8613424,
+      "original_to_snapshot_price_factor": 1.0069814959559573,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "e8ab8cde5adfdb522372a317555e1b85d5e18ef6bcb38c87c9a597458c33cc44",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 9.96564506,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sz.002176",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 4.0,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "2cdc82e5a7471f558cd69ca34716dd6db8e3da68312a4cc8fcc6f1ce628aae83",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 4.05,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sz.002673",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 8.39387262,
+      "original_to_snapshot_price_factor": 1.0141950440863485,
+      "previous_date_alignment_relative_error": 6.795817842908392e-07,
+      "source_snapshot_sha256": "094b29ca04d4f872c0aadcccfe140d100d4589922eb11ea481de3654375432e6",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 8.486822252506272,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 1,
+      "to_fold": 2,
+      "symbol": "sz.300355",
+      "previous_test_end": "2019-10-11",
+      "previous_close": 3.39785702,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "926177fa59c41200d91b18ece12f9fc06db14b623b63730281c56e9e58025062",
+      "daily": [
+        {
+          "date": "2019-10-14",
+          "close": 3.43680094,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.600019",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 3.50252,
+      "original_to_snapshot_price_factor": 1.0561375624299256,
+      "previous_date_alignment_relative_error": 1.8119970770502647e-06,
+      "source_snapshot_sha256": "95f5e61e41621221ccafdb9290661c71ec96c21f70af1dd4c05dbbfa43a6bc78",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 3.5239703854124675,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.600068",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 6.34193904,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "2daf13e6d10a23ad74f4095ae703b579fbc758414493ac4e3167d62da294bd9f",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 6.55462602,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.600115",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 4.17331836,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "30cb3c786f576fa42c892a36568f12955520f5bfffff9af589f34c458e07eec5",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 4.21287588,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.600291",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 7.15,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "f22fc7e9d9c18da3cafcbbf878c97536da74659894470cb2bde17437ea98f86b",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 7.24,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.600340",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 15.41146362,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "9192d3e68980691ef05af3fc5cfc3194aae96da3d1a27bb9d0d5bf5d942ee40c",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 15.5789004,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.600362",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 11.42511002,
+      "original_to_snapshot_price_factor": 1.0144541025424034,
+      "previous_date_alignment_relative_error": 5.438444306005152e-07,
+      "source_snapshot_sha256": "70c947d32ea580aa138c019f941ed7bd2ff1b75c9ca3624a6f5f8b04498ffabd",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 11.451348302244615,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.601211",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 13.88586015,
+      "original_to_snapshot_price_factor": 1.0380686187479473,
+      "previous_date_alignment_relative_error": 1.536304287785839e-06,
+      "source_snapshot_sha256": "b27343ee7c33477c57459d140c05f80998d3a53d5109694dc9742629f0128826",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 13.770740093920445,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.601600",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 2.72074233,
+      "original_to_snapshot_price_factor": 1.0162519795958962,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "2a007a8ba6be8d4743e85855513c075d82f3d331afde5f5bc346a9ab271da824",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 2.72074233,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sh.601992",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 2.73917588,
+      "original_to_snapshot_price_factor": 1.0364963690358953,
+      "previous_date_alignment_relative_error": 1.7310370792333885e-07,
+      "source_snapshot_sha256": "98cb9d6c78ee7a57b45a3bc956c1eeb4169e1b252ffe20e996eea5972332ffd1",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 2.7727849200205656,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.000401",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 15.98291548,
+      "original_to_snapshot_price_factor": 1.0259742050830054,
+      "previous_date_alignment_relative_error": 5.617575500327376e-07,
+      "source_snapshot_sha256": "e5bb0be0d254e042ea74aeae5c19b4435fca99c53368b4b811b9fbe7c16d9a27",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 16.452517202320568,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.000709",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 1.87868982,
+      "original_to_snapshot_price_factor": 1.0194175236975314,
+      "previous_date_alignment_relative_error": 8.005191389770516e-07,
+      "source_snapshot_sha256": "b851015cbd96ca740eb4300ef16a4a8739324ae6b9d5dd1d1d35fdca10296fd5",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 1.8963285819514613,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.000786",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 22.48967912,
+      "original_to_snapshot_price_factor": 1.0333821354951964,
+      "previous_date_alignment_relative_error": 5.482125657874093e-07,
+      "source_snapshot_sha256": "1a65e3dda52235c304ae1dc2655ed5e47952c5f602ebab24748b4f33b91c39da",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 22.791184405579475,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.000807",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 3.7658675,
+      "original_to_snapshot_price_factor": 1.0144374769129434,
+      "previous_date_alignment_relative_error": 9.734101021896535e-07,
+      "source_snapshot_sha256": "52a68e6c84dd1bcb2dad07a60bfe9a1c48934ce6eb4ed824b4f06da45a877022",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 3.7474488521918796,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.000856",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 8.76,
+      "original_to_snapshot_price_factor": 1.0048423352133933,
+      "previous_date_alignment_relative_error": 2.220446049250313e-16,
+      "source_snapshot_sha256": "65e62fd27f0bd317a80f432c6c997c5cdfdac32cb3d5a3b26a46fd394c0a3b2d",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 8.959999999999999,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.001979",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 13.40603264,
+      "original_to_snapshot_price_factor": 1.0072256522931013,
+      "previous_date_alignment_relative_error": 7.409548148373801e-07,
+      "source_snapshot_sha256": "e81c8271e01bc2c7acf70b3d017d13be2049d0ac103c8d98b91ef9ecfeaada2e",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 13.518833796837571,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.002146",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 7.0599057,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "7bf3d2aefba330eae5327b11465812cd90ac32e2ee9f30d085e87475fc6c1d68",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 7.08648,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.002302",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 9.30729306,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "0b23a09a0fb1ee6b43c559c57e67f56d01f0535fa1ad532147e978cc7d6583b5",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 9.38990217,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.002450",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 3.52,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "c0f400f8aff39f41e505410dd31034c1339f1e7b2c6f259f28f1f7af42b306ee",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-20",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-21",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-27",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-28",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-04-30",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-06",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-07",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-11",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-12",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-13",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-14",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-15",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-19",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-20",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-21",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-25",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-26",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-27",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-28",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-05-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-01",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-02",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-03",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-04",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-05",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-10",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-11",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-12",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-15",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-16",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-17",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-19",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-06-30",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-01",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-02",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-03",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-06",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-07",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-10",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-13",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-14",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-15",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-16",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-17",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-20",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-21",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-27",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-28",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-30",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-07-31",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-03",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-04",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-05",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-06",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-07",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-10",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-11",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-12",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-13",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-14",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-17",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-19",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-20",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-21",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-25",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-26",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-27",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-28",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-08-31",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-01",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-02",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-03",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-04",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-07",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-10",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-11",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-14",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-15",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-16",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-17",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-21",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-25",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-28",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-09-30",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-12",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-13",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-14",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-15",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-16",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-19",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-20",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-21",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-26",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-27",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-28",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-30",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-02",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-03",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-04",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-05",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-06",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-10",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-11",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-12",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-13",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-16",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-17",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-19",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-20",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-25",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-26",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-27",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-30",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-01",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-02",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-03",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-04",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-07",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-10",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-11",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-14",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-15",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-16",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-17",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-21",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-25",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-28",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-30",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-31",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-04",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-05",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-06",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-07",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-11",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-12",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-13",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-14",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-15",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-19",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-20",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-21",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-25",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-26",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-27",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-28",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-01",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-02",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-03",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-04",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-05",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-10",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-19",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-25",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-26",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-01",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-02",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-03",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-04",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-05",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-10",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-11",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-12",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-15",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-16",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-17",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-18",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-19",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-22",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-23",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-24",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-25",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-26",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-29",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-30",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-31",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-01",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-02",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-06",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-07",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-08",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-09",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-12",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-13",
+          "close": 3.52,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-14",
+          "close": 3.17,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.002497",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 7.65985298,
+      "original_to_snapshot_price_factor": 1.0027130597787313,
+      "previous_date_alignment_relative_error": 2.630870357123172e-07,
+      "source_snapshot_sha256": "0e0b44a47b9d2044a1f4f7e811a4b3950eaed7601e400297e409c22a1070c615",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 7.659854995208014,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 2,
+      "to_fold": 3,
+      "symbol": "sz.300070",
+      "previous_test_end": "2020-04-16",
+      "previous_close": 9.59192108,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "1daa72ae7d94c75a0f74ce71e622ed82ea281d97138f84a3e818ce0556b007eb",
+      "daily": [
+        {
+          "date": "2020-04-17",
+          "close": 9.62087054,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.600028",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 2.8325505,
+      "original_to_snapshot_price_factor": 1.04237574437402,
+      "previous_date_alignment_relative_error": 1.4461305886115383e-07,
+      "source_snapshot_sha256": "44e94b9085268001226ddcb39cfcf1b139990082192d29313ba0e6af40346025",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 2.818025007523157,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.600029",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 5.77,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "d58887efe48c629bd4fe915bedc0ac20045b4bcff9e14b1dd9908565f35aa38e",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 5.66,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.600271",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 15.10758778,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "0ea97ea5abcd3c9c5499df459cf6f165eb622a82eefc3261e7085bfcc69d6cc5",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 15.05018086,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.600392",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 6.5171301,
+      "original_to_snapshot_price_factor": 1.013216015520928,
+      "previous_date_alignment_relative_error": 6.346536562951144e-08,
+      "source_snapshot_sha256": "ef4ff219cc3cd8e76cef77de7dd949968364f5a05615535b130ff402656d9d78",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 6.536497914841204,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.600436",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 215.25245874,
+      "original_to_snapshot_price_factor": 1.0205575690653013,
+      "previous_date_alignment_relative_error": 8.586064719207087e-07,
+      "source_snapshot_sha256": "562387e8dfbf0a57d6c2b9a73783450357b4cb3b9b7dfe5e4216e42aae4241e3",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 223.76524308612093,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.600516",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 5.68186008,
+      "original_to_snapshot_price_factor": 1.0014791833755157,
+      "previous_date_alignment_relative_error": 5.410303292041618e-07,
+      "source_snapshot_sha256": "0cdfb41aabfaf91bda51685ca27ef2b840002c3a3fa063afe54f08adf7d80664",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 5.663264583996244,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.600522",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 10.49532814,
+      "original_to_snapshot_price_factor": 1.0061044839301416,
+      "previous_date_alignment_relative_error": 2.57919308688237e-07,
+      "source_snapshot_sha256": "989c2320a1dc1883a2cf012355a5c741fb323975ad7eefcc45b3f9be36fe5e01",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 10.391411319853686,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.601111",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 7.12,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "5a0d29dc49a7ecfd5075acede07757433e34ff3d0553bfc574367ba7d8152830",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 7.04,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.601766",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 4.71138832,
+      "original_to_snapshot_price_factor": 1.037731718484484,
+      "previous_date_alignment_relative_error": 3.392950524983007e-07,
+      "source_snapshot_sha256": "4ecff85bc2621655724940a940288a320e60e9b23fa30e0cf81739913895c89f",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 4.677495027050383,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.601933",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 7.86586422,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "fe62742a03d1be91831f67ab26a7dd019f20d8c7603afa422b79d22b1bccc84e",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 7.78661118,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.601939",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 4.78027032,
+      "original_to_snapshot_price_factor": 1.0203452256955339,
+      "previous_date_alignment_relative_error": 4.2604885253094693e-07,
+      "source_snapshot_sha256": "90119c1f67d7b375081f7f2bfec587f987945cc44868a4becdb172a69836c7cf",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 4.74315439918365,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sh.601989",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 4.22359475,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "ab1ab9ff9d1ceb0b850b0127da07caab1e6a1ea8243e3551764f4fa63f6f7440",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 4.25340836,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sz.000050",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 14.5981321,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "686127eff6bb22d5c9202437966477d344d6b584996fa7f9d3620aae18f8b6fa",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 14.80554805,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sz.000776",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 13.6559542,
+      "original_to_snapshot_price_factor": 1.0372316185565669,
+      "previous_date_alignment_relative_error": 1.8439095605948808e-07,
+      "source_snapshot_sha256": "d8fc17932175afb945e3309178985e5ec3b86a8845dbfe40608bb7cb9b70ad15",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 13.586367214796297,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sz.000792",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 8.84,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "2837d9b42e239ba6cb96b4d99772a48eb1893531e88168b27d646b03dfc139a5",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-28",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-29",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-10-30",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-02",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-03",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-04",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-05",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-06",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-09",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-10",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-11",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-12",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-13",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-16",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-17",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-18",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-19",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-20",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-23",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-24",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-25",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-26",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-27",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-11-30",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-01",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-02",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-03",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-04",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-07",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-08",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-09",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-10",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-11",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-14",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-15",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-16",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-17",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-18",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-21",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-22",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-23",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-24",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-25",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-28",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-29",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-30",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2020-12-31",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-04",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-05",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-06",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-07",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-08",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-11",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-12",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-13",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-14",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-15",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-18",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-19",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-20",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-21",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-22",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-25",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-26",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-27",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-28",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-01-29",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-01",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-02",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-03",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-04",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-05",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-08",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-09",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-10",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-18",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-19",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-22",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-23",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-24",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-25",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-02-26",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-01",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-02",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-03",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-04",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-05",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-08",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-09",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-10",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-11",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-12",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-15",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-16",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-17",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-18",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-19",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-22",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-23",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-24",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-25",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-26",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-29",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-30",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-03-31",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-01",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-02",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-06",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-07",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-08",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-09",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-12",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-13",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-14",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-15",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-16",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-19",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-20",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-21",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-22",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-23",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-26",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-27",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-28",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-29",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-04-30",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-06",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-07",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-10",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-11",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-12",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-13",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-14",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-17",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-18",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-19",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-20",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-21",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-24",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-25",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-26",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-27",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-28",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-05-31",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-01",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-02",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-03",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-04",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-07",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-08",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-09",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-10",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-11",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-15",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-16",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-17",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-18",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-21",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-22",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-23",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-24",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-25",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-28",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-29",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-06-30",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-01",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-02",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-05",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-06",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-07",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-08",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-09",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-12",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-13",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-14",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-15",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-16",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-19",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-20",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-21",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-22",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-23",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-26",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-27",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-28",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-29",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-07-30",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-08-02",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-08-03",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-08-04",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-08-05",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-08-06",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-08-09",
+          "close": 8.84,
+          "trade_status": 0,
+          "is_st": 1
+        },
+        {
+          "date": "2021-08-10",
+          "close": 35.9,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sz.000830",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 7.54890128,
+      "original_to_snapshot_price_factor": 1.0246700610633255,
+      "previous_date_alignment_relative_error": 9.716589788322239e-07,
+      "source_snapshot_sha256": "8de018212ac271b74a3c427c348170ad8e7a71d7671d26b46243df7369cbd63b",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 7.796413815448125,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sz.000839",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 2.67,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "e9129585e09141a98a6f6e421b71880e12d3d4d1eaddaf5d66ed299a5d6a3df8",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 2.65,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 3,
+      "to_fold": 4,
+      "symbol": "sz.002340",
+      "previous_test_end": "2020-10-26",
+      "previous_close": 4.64167886,
+      "original_to_snapshot_price_factor": 1.0184048486619344,
+      "previous_date_alignment_relative_error": 1.9810530238473234e-07,
+      "source_snapshot_sha256": "0410e2401a217e974aa6ce583a073cf78c181e86f27069c9699bdaedc5db2aed",
+      "daily": [
+        {
+          "date": "2020-10-27",
+          "close": 4.6706281147236215,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.600104",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 17.36651075,
+      "original_to_snapshot_price_factor": 1.0247380746571522,
+      "previous_date_alignment_relative_error": 6.030311241467246e-07,
+      "source_snapshot_sha256": "e4333f0a804c059f043db627442612067a8fcaea72f0bf7812b2125900b99d1d",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 17.639088383074288,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.600111",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 19.92056241,
+      "original_to_snapshot_price_factor": 1.0027671159510845,
+      "previous_date_alignment_relative_error": 2.1511877468238794e-07,
+      "source_snapshot_sha256": "cfa7bb9a006f3c0a063151b584e3b7eb732c1ec28441d6b0765b218a57992dbe",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 19.784448893992682,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.600446",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 13.6693156,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "107f2121a935d59bc0a9e3a0fcb58b4212f4844670685a6b4d3dce301bbb4193",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 13.72831984,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.600518",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 1.86834135,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "4bf6cccad68995e7595eb9ecf37be9c0066dd8e498bd77f9d91784e79a962e5e",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 1.8965073,
+          "trade_status": 1,
+          "is_st": 1
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.600588",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 33.3569409,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "81ec5b82d5d7ec65673be81cff6bc45be9ce58f964abbbab695587fa25bb7a8e",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 32.7164088,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.600604",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 5.79727038,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "29ba801a83b702cd7e2b6e6e8390347526e84465bb152368cbeec344f6fe71a6",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 5.42934756,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.600690",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 28.80084036,
+      "original_to_snapshot_price_factor": 1.0416265046737352,
+      "previous_date_alignment_relative_error": 1.2455983571246776e-06,
+      "source_snapshot_sha256": "a9ea39a5456777bb1d840653733d858862ceb5c779b8f90b6875b0eb90b2432c",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 28.93179662255677,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.601155",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 44.13585054,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "f9cef32c4eaa2cb3382dba5f1f74ba8fb1b475bb4c34f65348fe0ebf06b66e51",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 42.74088816,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.601186",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 6.60790042,
+      "original_to_snapshot_price_factor": 1.048465840463648,
+      "previous_date_alignment_relative_error": 6.810340262841663e-07,
+      "source_snapshot_sha256": "862ddaee18bdc815a28cede137e9b48a28da52b0c9a3a17c39784c998812ad8f",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 6.531757488346071,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.601288",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 2.37057452,
+      "original_to_snapshot_price_factor": 1.0377552993677948,
+      "previous_date_alignment_relative_error": 5.669317122425355e-07,
+      "source_snapshot_sha256": "6ceba49ed88116472863ce04a6bacbf86c97da289e83a8edc171916ed73be167",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 2.3485581314713277,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sh.603993",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 5.32935652,
+      "original_to_snapshot_price_factor": 1.0192711224864264,
+      "previous_date_alignment_relative_error": 3.506678237785721e-07,
+      "source_snapshot_sha256": "ae67223ed7ddd1795ab81c138b0ab2304e8d4682b62899ff18c89de980844951",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 5.357015661466318,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sz.000338",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 15.37498147,
+      "original_to_snapshot_price_factor": 1.0119587975864612,
+      "previous_date_alignment_relative_error": 8.738090031545909e-07,
+      "source_snapshot_sha256": "7c90f6875ffb035b5fd56a824d97a6bd09c84cb36de5ecb4f9addf8a78049175",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 15.273788136361922,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sz.000413",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 1.88,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "15614f61255c3bef4d3d94a859161c80547630538d1a4744554a5150d1697e14",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 1.9,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sz.000988",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 20.0559285,
+      "original_to_snapshot_price_factor": 1.001663993067555,
+      "previous_date_alignment_relative_error": 2.2154562029363944e-07,
+      "source_snapshot_sha256": "cd57ff63db835348b8bd0a26c5c9c412130b81d554a65659056bc06d69f4bdda",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 19.79113578463848,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sz.002024",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 6.9,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "60da5acee6eb7a8cffb5f5c9c5831a663e9859f5221f9e4d037171e39f75e908",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 6.66,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sz.002547",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 3.46,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "6687d6f050806f7c6fbf0d757a7c595f4023e7ad0af6be5dd290ed9a48a7ab13",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 3.38,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 4,
+      "to_fold": 5,
+      "symbol": "sz.300003",
+      "previous_test_end": "2021-04-29",
+      "previous_close": 29.18977178,
+      "original_to_snapshot_price_factor": 1.0276891633918708,
+      "previous_date_alignment_relative_error": 1.155338295477648e-06,
+      "source_snapshot_sha256": "8b611312560a6497d01d2f8e2c2936214e702e022d70bbb825881d2b9f57171f",
+      "daily": [
+        {
+          "date": "2021-04-30",
+          "close": 29.24441755276544,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.600050",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 3.53622425,
+      "original_to_snapshot_price_factor": 1.0122550822581908,
+      "previous_date_alignment_relative_error": 3.903993586185095e-07,
+      "source_snapshot_sha256": "1b612c33a89e9aadea22ea7abf6d70328c32d802b2d2e69cea8a921493c4e3b1",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 3.5450003839653363,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.600410",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 6.37376036,
+      "original_to_snapshot_price_factor": 1.0007003865207795,
+      "previous_date_alignment_relative_error": 7.894999333180053e-07,
+      "source_snapshot_sha256": "e03fe693330e3c56caae5acf49fec0dec999d38f35df5806cc0b1919ba9f4404",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 6.483647661156563,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.600487",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 14.91747952,
+      "original_to_snapshot_price_factor": 1.0024424643008327,
+      "previous_date_alignment_relative_error": 5.885476284106517e-08,
+      "source_snapshot_sha256": "0ffe530013fe6936905b24260eeb536bce123298f4900206279ef3f75c988e23",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 15.081727267631427,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.600498",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 16.9162524,
+      "original_to_snapshot_price_factor": 1.0017607474193126,
+      "previous_date_alignment_relative_error": 2.004179441295051e-07,
+      "source_snapshot_sha256": "45d3e99929266ee46da97889417ebcb90aa422af7a75e53aadf2f9941f8611d9",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 17.120293368785312,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.600776",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 10.2503841,
+      "original_to_snapshot_price_factor": 1.004071613604078,
+      "previous_date_alignment_relative_error": 3.662337003662586e-07,
+      "source_snapshot_sha256": "e5c28e2a19b71cd94470d11d1ba076657d81265f5a1ab19385cb0a8792c7ecf4",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 10.54464963819253,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.601099",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 3.19,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "8326322f803d41e707f5ee8ce8662c2b7d7c6792f0961cf0a46c6cce389bd3ad",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 3.2,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.601138",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 10.2421674,
+      "original_to_snapshot_price_factor": 1.0115971683247489,
+      "previous_date_alignment_relative_error": 9.598448238445911e-07,
+      "source_snapshot_sha256": "3e09a4a4901d50fdc7668c1b178ee4e29029bed1346d75358eba0504e2c21595",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 10.189427820260166,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.601336",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 32.8394496,
+      "original_to_snapshot_price_factor": 1.034123018756634,
+      "previous_date_alignment_relative_error": 1.3630092443595032e-07,
+      "source_snapshot_sha256": "8b988d73c6108f6b2cfe76adf6ea636a855e2393c4b9823cf8b36e247d5f37b5",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 32.728269919105955,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sh.601668",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 3.8063464,
+      "original_to_snapshot_price_factor": 1.0606742322207259,
+      "previous_date_alignment_relative_error": 4.485248166208322e-07,
+      "source_snapshot_sha256": "2a0a5e331614e730dc90ec33090899a25f6b84896ba3940dcaecbce46bd836d8",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 3.798033896486779,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sz.000021",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 15.36701361,
+      "original_to_snapshot_price_factor": 1.005738270156977,
+      "previous_date_alignment_relative_error": 2.4814614207890884e-07,
+      "source_snapshot_sha256": "fdcef8a505c1f254394d33e1c618707ddf2461c7acb88834b98d406bcfa4b02c",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 15.453510954728175,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sz.000735",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 6.99625283,
+      "original_to_snapshot_price_factor": 1.0049672570891997,
+      "previous_date_alignment_relative_error": 1.5034432054861213e-07,
+      "source_snapshot_sha256": "7316fb38a0481d3bf7ed644e96e7f883a55057dc2d134d87e94fc716022fc4d4",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 6.9962538818468785,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sz.002027",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 6.22893362,
+      "original_to_snapshot_price_factor": 1.051158711345175,
+      "previous_date_alignment_relative_error": 4.7729833418941325e-09,
+      "source_snapshot_sha256": "b1eb1989de29f1e09294c46b035bbfd967be0cb949b0e9e3091ed15ebe22b847",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 6.11464128918508,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sz.002400",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 4.67565738,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "42e672e57c33052ec85cf6064fdc6ae87f8e9284ada97804343dd78b8d063d14",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 4.62674883,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sz.300017",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 5.33661686,
+      "original_to_snapshot_price_factor": 1.0232524638044527,
+      "previous_date_alignment_relative_error": 2.4893394234837274e-07,
+      "source_snapshot_sha256": "998ae810305d265f1075fa22faf954115c6e9c2b8b93ede2460539db9fc076ff",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 5.355373406865453,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sz.300383",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 13.4080518,
+      "original_to_snapshot_price_factor": 1.0013937396831403,
+      "previous_date_alignment_relative_error": 1.3479615046385618e-07,
+      "source_snapshot_sha256": "4ec4c99ad1277804c69fcb0ec75990b20f9a376f7057c4a299be0e2cf8ada3a9",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 13.948700930230936,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 5,
+      "to_fold": 6,
+      "symbol": "sz.300498",
+      "previous_test_end": "2021-11-08",
+      "previous_close": 15.80471284,
+      "original_to_snapshot_price_factor": 1.0164607970024415,
+      "previous_date_alignment_relative_error": 1.4840151885131547e-08,
+      "source_snapshot_sha256": "1851ac109b475dfe741e90b261a78a1c73590108d655466446816da86f54b111",
+      "daily": [
+        {
+          "date": "2021-11-09",
+          "close": 15.795293825595436,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.600183",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 14.94932268,
+      "original_to_snapshot_price_factor": 1.0055887611988648,
+      "previous_date_alignment_relative_error": 3.1624020735421254e-07,
+      "source_snapshot_sha256": "070bf2484a006f857a28522942c79d3cbc6bdbed51ff4b086d4682c36f84e082",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 15.39318131205561,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.600352",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 8.99505888,
+      "original_to_snapshot_price_factor": 1.0373388571095243,
+      "previous_date_alignment_relative_error": 3.275045501460738e-07,
+      "source_snapshot_sha256": "e950bfe28bc8732adb6f73902e08028048cd0b8ea708c30c9863603b2f1b3cf4",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 9.03839064011309,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.600536",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 22.8075048,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "0d57f012611a2b738a593566cd8393a8f71eae4e774f3bf4c20238b99ea92ee7",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 22.8665916,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.600547",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 17.399856,
+      "original_to_snapshot_price_factor": 1.010209802894942,
+      "previous_date_alignment_relative_error": 4.336310914787589e-07,
+      "source_snapshot_sha256": "2d15720a670080e466cbcbeb3443f655aeb43801309bb018f2eeeb5884b880d6",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 17.380313136640886,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.600690",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 22.95192672,
+      "original_to_snapshot_price_factor": 1.0416267069104008,
+      "previous_date_alignment_relative_error": 1.1423891914663642e-06,
+      "source_snapshot_sha256": "a9ea39a5456777bb1d840653733d858862ceb5c779b8f90b6875b0eb90b2432c",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 22.394041807259462,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.600837",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 8.3466031,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "cbdef4dcc959f990a022ad3e8f4c8c8bb36ab3b12131ca7e09197d1d9cdf4343",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 8.3466031,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.601108",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 6.49829304,
+      "original_to_snapshot_price_factor": 1.0055132204897776,
+      "previous_date_alignment_relative_error": 5.455672917875631e-07,
+      "source_snapshot_sha256": "98a401508b39c0fd51b9312e27fee404a43eccc3102566c3329971a33da1969b",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 6.46158304522644,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.601398",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 3.6481137,
+      "original_to_snapshot_price_factor": 1.04146334323727,
+      "previous_date_alignment_relative_error": 7.82067070992376e-07,
+      "source_snapshot_sha256": "778a9da272aff2404feea1f19b97bcaa73ed408bd7e52ba1ebc47f6f40138251",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 3.640214503105879,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.603019",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 24.61286205,
+      "original_to_snapshot_price_factor": 1.0043263000841511,
+      "previous_date_alignment_relative_error": 3.2218745316114905e-07,
+      "source_snapshot_sha256": "6d673b3af0e18d2c20a6f8a47520e52a75af25fd4c4c51f7e2931fccc82b34ed",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 24.251059813384686,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sh.603160",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 56.93546201,
+      "original_to_snapshot_price_factor": 1.0060379941169864,
+      "previous_date_alignment_relative_error": 1.5647027606924269e-07,
+      "source_snapshot_sha256": "9060c618c579aa544eb0f82b092b3defe09489f2c295e9f3c27ec577eedd1b61",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 57.349690523520515,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sz.002008",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 28.14824844,
+      "original_to_snapshot_price_factor": 1.0013854566939662,
+      "previous_date_alignment_relative_error": 3.406811747153071e-07,
+      "source_snapshot_sha256": "44fc4f69c5a4b1e8d04b59ce721a9e59ab6e43ad7b23411bba19b36ca01a500d",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 28.642067602183438,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sz.002236",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 13.79379853,
+      "original_to_snapshot_price_factor": 1.0407724061198775,
+      "previous_date_alignment_relative_error": 7.645476239881432e-07,
+      "source_snapshot_sha256": "3c46bf0f1c0dc344c21f454833664cfba44f6b2a91c24dae131e4a49b3bf7336",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 13.704738352066846,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sz.002405",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 12.88073209,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "69c6fc84d15d78a91537dad2658ce21eb4e535fb51b5fb62b60e193800f0c952",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 12.96067457,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sz.002463",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 13.9134137,
+      "original_to_snapshot_price_factor": 1.004656089006141,
+      "previous_date_alignment_relative_error": 4.303068561473111e-07,
+      "source_snapshot_sha256": "d5f2604cc64be2d67c94578427ef31e7864db8cbd56b29d86567b8d8c5eccddb",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 14.009706328470093,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sz.300033",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 55.4128284,
+      "original_to_snapshot_price_factor": 1.0009510223490252,
+      "previous_date_alignment_relative_error": 7.484066031349101e-07,
+      "source_snapshot_sha256": "a3e85a0236c84ab04ef76690eacd6d7f37cfab56fc306b731d75ae6135e42175",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 54.93416066688064,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 6,
+      "to_fold": 7,
+      "symbol": "sz.300088",
+      "previous_test_end": "2022-05-18",
+      "previous_close": 6.4758576,
+      "original_to_snapshot_price_factor": 1.0069638688398195,
+      "previous_date_alignment_relative_error": 1.1110239419576118e-06,
+      "source_snapshot_sha256": "6ba04c75f4345c5508e083c85a4ac3d866a96d458eecb93683ba5e73bb0b2e3f",
+      "daily": [
+        {
+          "date": "2022-05-19",
+          "close": 6.333014836123291,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sh.600009",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 51.0794884,
+      "original_to_snapshot_price_factor": 1.0234771121969193,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "5a16f9466b55b5d2bd544863da3d39a70473667896f20addc2a6fb3cbd66ac2d",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 51.20660045,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sh.600143",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 9.66201534,
+      "original_to_snapshot_price_factor": 1.0206034712828782,
+      "previous_date_alignment_relative_error": 4.94233694414703e-07,
+      "source_snapshot_sha256": "2b3b99b7ec0db53dcb0eac8396fe9c20e51f7be9e15bae7ce8f89257a3afab9f",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 9.519782735000284,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sh.601601",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 20.5784974,
+      "original_to_snapshot_price_factor": 1.038487374366817,
+      "previous_date_alignment_relative_error": 6.919215860268224e-07,
+      "source_snapshot_sha256": "5a8095fe5d20a841f051d911e79133b4285894031f3da473c4ab603e6789fb4d",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 21.191152537373984,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sh.601788",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 14.75549518,
+      "original_to_snapshot_price_factor": 1.0116835867862204,
+      "previous_date_alignment_relative_error": 4.548664178649631e-08,
+      "source_snapshot_sha256": "b14717ac2f05bdae7a12a75278f4381213f50a306a26700f6163e509a18c2176",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 14.822176594211006,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sh.601990",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 8.00188268,
+      "original_to_snapshot_price_factor": 1.0117303010639365,
+      "previous_date_alignment_relative_error": 3.894048840047404e-07,
+      "source_snapshot_sha256": "e94110ba309e7f57a3abbaeebd9b7f12201ade8662c2efac37cb156c55a1b911",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 8.011451190300564,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.000066",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 12.8001363,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "35974593b5f8707634162ec71b2c42219b3e53c5385aeeeef5c842319a976622",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 12.6402595,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.000636",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 15.742722,
+      "original_to_snapshot_price_factor": 1.0015515549047318,
+      "previous_date_alignment_relative_error": 3.5000963760634107e-07,
+      "source_snapshot_sha256": "6fbb704ce01e677ec30f605258f92d78c457963653f4c8c2faa073efde5295a5",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 15.566492051575853,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.002007",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 19.86239037,
+      "original_to_snapshot_price_factor": 1.0386997358711394,
+      "previous_date_alignment_relative_error": 2.377008456733165e-08,
+      "source_snapshot_sha256": "eef498176a1f847e580b21bddcf40ca8c41286bf66f8d431929751688b2ec470",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 19.17523940579705,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.002156",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 18.65221825,
+      "original_to_snapshot_price_factor": 1.0011200398957196,
+      "previous_date_alignment_relative_error": 2.3531559545375558e-07,
+      "source_snapshot_sha256": "2d752b5052b462f905ec71b1ca72a559c51188a765b3ba9e40e801e8bf3c984c",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 18.155351477761652,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.002157",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 4.04,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "eb97a6be5214eb46f81b4814fb0b1fcd0409d2ab9727b738fc04cb33fda9b1cc",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 3.94,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.002384",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 27.13662184,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "b52eb17237017a76452e852128cba669428e9ae08a66d52117f5c6b114b199f5",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 26.56007856,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.002456",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 5.22,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "fddf4ff69df8b06ab60e37c4fac12f45406450f1f8149c5083a2e351ee504a0f",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 5.19,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.002600",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 4.78803105,
+      "original_to_snapshot_price_factor": 1.0027590267124429,
+      "previous_date_alignment_relative_error": 4.2059147697948163e-07,
+      "source_snapshot_sha256": "0d128211ef75750991086b42159b62399a196120a1cac852ff175efa6fd11afb",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 4.739669093463586,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.002797",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 5.77732208,
+      "original_to_snapshot_price_factor": 1.0123813620557767,
+      "previous_date_alignment_relative_error": 1.919181540355197e-07,
+      "source_snapshot_sha256": "3f56ad104f761b18573b719c8ce397b2fcd561fb9dceda139babddcf023cd3af",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 5.757805205027135,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 7,
+      "to_fold": 8,
+      "symbol": "sz.300136",
+      "previous_test_end": "2022-11-21",
+      "previous_close": 16.97440115,
+      "original_to_snapshot_price_factor": 1.0004572892828296,
+      "previous_date_alignment_relative_error": 4.045452457468457e-07,
+      "source_snapshot_sha256": "99003cfce9b9a79f756db706f8d7f3d29061f26be9345c27bfe526a04f22593f",
+      "daily": [
+        {
+          "date": "2022-11-22",
+          "close": 16.974408016913284,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sh.600559",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 25.54717788,
+      "original_to_snapshot_price_factor": 1.0171531093377426,
+      "previous_date_alignment_relative_error": 5.107581565466646e-07,
+      "source_snapshot_sha256": "318261cf4d00a4135d0f3b47e938b93101f029552ac70bce55840bccf3272f90",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 25.060908399930085,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sh.600585",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 21.96955872,
+      "original_to_snapshot_price_factor": 1.0446565116513669,
+      "previous_date_alignment_relative_error": 8.65362910662526e-07,
+      "source_snapshot_sha256": "49ed1b3cf07df739f62ca046ec87723109f4d2667ac76a35e63cf2df4e604a04",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 21.77838678619187,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sh.601066",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 24.45803094,
+      "original_to_snapshot_price_factor": 1.0068137719416994,
+      "previous_date_alignment_relative_error": 4.7072647679780033e-07,
+      "source_snapshot_sha256": "3c605fedad2d8eff678fa1643e9768242d773e2739d7259960106d8123c635fb",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 24.429154730544653,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sh.601688",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 12.34226895,
+      "original_to_snapshot_price_factor": 1.021810565588543,
+      "previous_date_alignment_relative_error": 2.757746564441277e-07,
+      "source_snapshot_sha256": "3a68b802610aa276315dd45717111c71ea974e66d0bf75d4c6c761a74e1c181a",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 12.34227235368498,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sz.000338",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 10.28295632,
+      "original_to_snapshot_price_factor": 1.0119586799135938,
+      "previous_date_alignment_relative_error": 4.491923939475839e-07,
+      "source_snapshot_sha256": "7c90f6875ffb035b5fd56a824d97a6bd09c84cb36de5ecb4f9addf8a78049175",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 10.229855564824625,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sz.000876",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 11.3376208,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "1f33a22e5110cf596afeaae0969aac5921b20e597497228e8929edda0bd582e5",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 11.2477981,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sz.000963",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 38.35191396,
+      "original_to_snapshot_price_factor": 1.0350836190956811,
+      "previous_date_alignment_relative_error": 1.9160008202234735e-07,
+      "source_snapshot_sha256": "5459e35c3b37431c093e3406f478c7f9bbbc4fb2812392386562b3ffb78738fb",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 36.6844464687416,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sz.000977",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 43.38133932,
+      "original_to_snapshot_price_factor": 1.0005538512561147,
+      "previous_date_alignment_relative_error": 5.090111434569167e-07,
+      "source_snapshot_sha256": "b6ab44030ae86e5d1081b27cd16aa111389f1a6e33027a267e9e6a63c1b0e7a4",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 44.15425911499849,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sz.002185",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 9.72292368,
+      "original_to_snapshot_price_factor": 1.0011354729566657,
+      "previous_date_alignment_relative_error": 6.996946833037754e-07,
+      "source_snapshot_sha256": "2c2a75fc01e14b46f7a8aa104d0daa980ed470c25750d70338ddea95676c0a97",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 9.604358160113637,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sz.002385",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 6.35382713,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "7eeec0a459bb0faeeb82d531230c1140e676c7c4b2c76369d626b5903a165c24",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 6.25652503,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 8,
+      "to_fold": 9,
+      "symbol": "sz.300433",
+      "previous_test_end": "2023-05-30",
+      "previous_close": 10.93005173,
+      "original_to_snapshot_price_factor": 1.0125901071879917,
+      "previous_date_alignment_relative_error": 9.156033293766797e-07,
+      "source_snapshot_sha256": "f4301277a53c244fdc1dfccfe799df4c95cc1f22a4448bd82a59fd5f4b518778",
+      "daily": [
+        {
+          "date": "2023-05-31",
+          "close": 10.98674312948938,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sh.600392",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 10.1805648,
+      "original_to_snapshot_price_factor": 1.013215951216807,
+      "previous_date_alignment_relative_error": 6.737645887877619e-07,
+      "source_snapshot_sha256": "ef4ff219cc3cd8e76cef77de7dd949968364f5a05615535b130ff402656d9d78",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 9.915247880538411,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sh.600436",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 241.14051115,
+      "original_to_snapshot_price_factor": 1.0205575558471418,
+      "previous_date_alignment_relative_error": 6.425441475554905e-07,
+      "source_snapshot_sha256": "562387e8dfbf0a57d6c2b9a73783450357b4cb3b9b7dfe5e4216e42aae4241e3",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 234.63457923682742,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sh.600884",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 13.39651226,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "9f0b1c6d84807c3b750144f7a62bd53257753af6df1c8700e3946cfd7536d99a",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 13.61226868,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.000100",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 4.01943906,
+      "original_to_snapshot_price_factor": 1.0196509306674453,
+      "previous_date_alignment_relative_error": 1.3027617207228559e-08,
+      "source_snapshot_sha256": "e22883246bed7726f333f403d5c5b8c0df6ccd37a9539597f17ffcc1e0972b47",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 3.970895058268699,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.000155",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 11.38500588,
+      "original_to_snapshot_price_factor": 1.0223183648168706,
+      "previous_date_alignment_relative_error": 2.220446049250313e-16,
+      "source_snapshot_sha256": "399dd02593cccc33b2c0489ec3b1c0f164f4e587d03c3a8fd055115aec4ea78f",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 12.51962742,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.000768",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 21.95920824,
+      "original_to_snapshot_price_factor": 1.007145892197517,
+      "previous_date_alignment_relative_error": 1.0040953624113058e-07,
+      "source_snapshot_sha256": "42c8ec0066dfd06bae68b939704841b5950ce052d2d9fe0531cce51ab0a2efd4",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 21.354733305780915,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.000807",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 11.29413302,
+      "original_to_snapshot_price_factor": 1.0144384643775926,
+      "previous_date_alignment_relative_error": 1.1954157010940492e-06,
+      "source_snapshot_sha256": "52a68e6c84dd1bcb2dad07a60bfe9a1c48934ce6eb4ed824b4f06da45a877022",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 11.020748984360626,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.002202",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 8.274682,
+      "original_to_snapshot_price_factor": 1.0097280743788453,
+      "previous_date_alignment_relative_error": 9.991881659843216e-07,
+      "source_snapshot_sha256": "b079209987f92aa780d934b05492f9e0063b76946662e9d9aea2e690c34b79f7",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 8.148136181513111,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.002304",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 101.85908757,
+      "original_to_snapshot_price_factor": 1.0380924431401322,
+      "previous_date_alignment_relative_error": 7.172051690318426e-07,
+      "source_snapshot_sha256": "4202ea40179304a2df59905b3b555de26721e0c5864f92f2bdf2dab38490fe8e",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 98.9667543704813,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.002352",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 38.6561302,
+      "original_to_snapshot_price_factor": 1.0276009857732478,
+      "previous_date_alignment_relative_error": 2.396108409463693e-07,
+      "source_snapshot_sha256": "79bd10f8114b24f2550b3d785445f1c4196ac727f94a472fd3ac137b49eb9bad",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 37.84279989245272,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.002407",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 14.41740625,
+      "original_to_snapshot_price_factor": 1.0051362366460104,
+      "previous_date_alignment_relative_error": 5.512243206329259e-08,
+      "source_snapshot_sha256": "427d7964c3f49d371984fd5920d2ef95f97865ecbfb5fdf9b54752b2a6e0083d",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 14.292036712188136,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 9,
+      "to_fold": 10,
+      "symbol": "sz.300122",
+      "previous_test_end": "2023-12-04",
+      "previous_close": 60.77078315,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "b934410a7cc30038209ce1b473ea8e97536c49d70b78287c62ecc80e73aeb985",
+      "daily": [
+        {
+          "date": "2023-12-05",
+          "close": 61.0502112,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sh.600338",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 9.24414208,
+      "original_to_snapshot_price_factor": 1.0015876415328633,
+      "previous_date_alignment_relative_error": 2.220446049250313e-16,
+      "source_snapshot_sha256": "46f75592e587a61eccefeee374c40ccdb482ac522b4226201c7999c2713194ab",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 9.164451199999998,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sh.600958",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 7.75239136,
+      "original_to_snapshot_price_factor": 1.0223963074495115,
+      "previous_date_alignment_relative_error": 1.524553794318706e-08,
+      "source_snapshot_sha256": "b7e35897c46120f4a72ddb1c58edee73778209869270c232be964376ff711ce7",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 7.7428439619561775,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sh.601600",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 7.32351795,
+      "original_to_snapshot_price_factor": 1.0162519795958962,
+      "previous_date_alignment_relative_error": 1.2156847506439306e-06,
+      "source_snapshot_sha256": "2a007a8ba6be8d4743e85855513c075d82f3d331afde5f5bc346a9ab271da824",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 7.096146976667182,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sh.601615",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 10.35576776,
+      "original_to_snapshot_price_factor": 1.0170294702218332,
+      "previous_date_alignment_relative_error": 8.350764464370997e-07,
+      "source_snapshot_sha256": "5b8fbc868d67720b9a475274bc93ace22e2c5742feddc355cdacb76dd261a0f5",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 9.959292716763825,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sh.601633",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 24.2385202,
+      "original_to_snapshot_price_factor": 1.023474026743162,
+      "previous_date_alignment_relative_error": 2.823572490262549e-07,
+      "source_snapshot_sha256": "6a9096461d9eb6d8f8f8e7f89ae247a39f23d9022ffe4c4f33ea6dd923889c1c",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 24.86554037903244,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sh.601919",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 13.04131257,
+      "original_to_snapshot_price_factor": 1.0328849276427292,
+      "previous_date_alignment_relative_error": 4.703077436385428e-07,
+      "source_snapshot_sha256": "229009a2625ad710b675e1ca66bc8fa1f7d2de8bda0cd67407071825a754c130",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 12.878409396812817,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sh.603993",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 7.8935724,
+      "original_to_snapshot_price_factor": 1.0192713283443013,
+      "previous_date_alignment_relative_error": 4.5130535408777206e-07,
+      "source_snapshot_sha256": "ae67223ed7ddd1795ab81c138b0ab2304e8d4682b62899ff18c89de980844951",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 7.8077691763103765,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sz.000009",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 9.3830429,
+      "original_to_snapshot_price_factor": 1.0041667437144424,
+      "previous_date_alignment_relative_error": 3.055484398828412e-07,
+      "source_snapshot_sha256": "e79898e8ef41f9a20015104f4bc9b1f524d2b27db0689c7ac702f3deaf7ab6a4",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 9.442551914842113,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sz.000799",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 48.8031997,
+      "original_to_snapshot_price_factor": 1.0074238985895023,
+      "previous_date_alignment_relative_error": 5.175915702704259e-07,
+      "source_snapshot_sha256": "19d3a665f71ac3772a7cb0b4703d364c50175cfca3f929979a1c1a186fb2a176",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 49.91129423365179,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sz.002074",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 19.0416,
+      "original_to_snapshot_price_factor": 1.0038243605980983,
+      "previous_date_alignment_relative_error": 3.641934200881991e-07,
+      "source_snapshot_sha256": "5dda10d234dc3487b0600e2bcd8440b5174e77b1338a3943f967dce3fdea5814",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 20.658160023563212,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sz.002326",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 8.71,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "49c4a231889cb7f4c3c4a9acdf0077b03da14b6794049d350aceba24b329e98d",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 8.67,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sz.002340",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 6.3375499,
+      "original_to_snapshot_price_factor": 1.018405025288983,
+      "previous_date_alignment_relative_error": 1.2354338940756548e-07,
+      "source_snapshot_sha256": "0410e2401a217e974aa6ce583a073cf78c181e86f27069c9699bdaedc5db2aed",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 6.542616191702919,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sz.002497",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 9.5345184,
+      "original_to_snapshot_price_factor": 1.0027129691132515,
+      "previous_date_alignment_relative_error": 1.753993215114491e-07,
+      "source_snapshot_sha256": "0e0b44a47b9d2044a1f4f7e811a4b3950eaed7601e400297e409c22a1070c615",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 9.574247239316174,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sz.300124",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 54.9124146,
+      "original_to_snapshot_price_factor": 1.0066346611216872,
+      "previous_date_alignment_relative_error": 5.312687959557749e-07,
+      "source_snapshot_sha256": "de823eac0b4bcb37004748e56d801d124d7ea7b24093651aba65d671dbe7bcd4",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 55.41917725750478,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 10,
+      "to_fold": 11,
+      "symbol": "sz.300207",
+      "previous_test_end": "2024-06-14",
+      "previous_close": 15.1255192,
+      "original_to_snapshot_price_factor": 1.004132040319506,
+      "previous_date_alignment_relative_error": 5.743470344876656e-07,
+      "source_snapshot_sha256": "a4b55deb7ab8ee885068b9790d76b8b46674703cd2970d0ee24780adb06a73b4",
+      "daily": [
+        {
+          "date": "2024-06-17",
+          "close": 15.719444171578672,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sh.600010",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 1.98,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "ff9ce59540f41185b4452b8a4848417eabecb2d0c592af2715ae33d0b4bb9f71",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 1.96,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sh.600096",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 20.99839304,
+      "original_to_snapshot_price_factor": 1.0434847533095482,
+      "previous_date_alignment_relative_error": 2.887619926505991e-07,
+      "source_snapshot_sha256": "0825b2ab5d9973e8dcf1d34f47ec030a229b5e8a1a78533d76f34f569560ce69",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 20.87684689155835,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sh.600196",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 25.65857844,
+      "original_to_snapshot_price_factor": 1.0175045502842524,
+      "previous_date_alignment_relative_error": 3.4644470092715096e-07,
+      "source_snapshot_sha256": "2f8b4054bcafe959eb4e5ff65c3b0684b6d6a553a833ba2622cc036bef2fc6f6",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 25.727756756751916,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sh.600460",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 27.5553708,
+      "original_to_snapshot_price_factor": 1.0024161630884778,
+      "previous_date_alignment_relative_error": 4.4358164452695803e-07,
+      "source_snapshot_sha256": "d2b203cf430034211cf2d48529d3450acad6cbaa5b86e0b2a11db6a95ce0dddd",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 28.074542413346165,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sh.600893",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 39.90950478,
+      "original_to_snapshot_price_factor": 1.0017364960850366,
+      "previous_date_alignment_relative_error": 3.0161514474880136e-07,
+      "source_snapshot_sha256": "7a886574eb428f14b7926a5c06ea40b4578d6de3469f0c7f4c78474cd4d9d4ff",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 39.86960319472024,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sh.600905",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 4.46609334,
+      "original_to_snapshot_price_factor": 1.0102299891612596,
+      "previous_date_alignment_relative_error": 4.6353012783661995e-07,
+      "source_snapshot_sha256": "1e241a42c9eb295a009b077dee9a5183a097b02bddf119781078fb7c7ac80fa9",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 4.416905242630398,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sh.601669",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 5.28074936,
+      "original_to_snapshot_price_factor": 1.023912752426643,
+      "previous_date_alignment_relative_error": 2.82480059343726e-07,
+      "source_snapshot_sha256": "c65e16f4496836152a33264ced5e2897bff34fdaccf8f969e16b0846d06af877",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 5.309980099963071,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sh.688599",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 22.2,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "f6396bf280c225b55d3d4e5ee4d1784a55d95f70e324e4eff163ccbf75719b29",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 22.19,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.000519",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 15.18,
+      "original_to_snapshot_price_factor": 1.0009272052200635,
+      "previous_date_alignment_relative_error": 3.4662802983476126e-07,
+      "source_snapshot_sha256": "b07d1716ea6ded26ea4500bb103eeb1d0df80467b6f6fb0c77df8cf99d04e2b1",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 15.000005199420446,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.000661",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 100.13463985,
+      "original_to_snapshot_price_factor": 1.0020292666800066,
+      "previous_date_alignment_relative_error": 5.556139767159962e-07,
+      "source_snapshot_sha256": "c3e69935f9144d7bcb80fb09391bb00bcd589a45e61118292aae5c7bae8ccd42",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 99.57800973303529,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.000723",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 4.98,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "5b767281b932eaf66764b78a0d4fbe50fd7758d3505bd3e0b7fe262fd044ea3e",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 4.87,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.000762",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 22.34929131,
+      "original_to_snapshot_price_factor": 1.0046646279138438,
+      "previous_date_alignment_relative_error": 3.9528039863512276e-07,
+      "source_snapshot_sha256": "b7f17cfe2f2cd86fe0f409dac8c2aca1fab59a315d6eea9d73c0a576dd0035bb",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 22.289462660584206,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.000776",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 15.8567541,
+      "original_to_snapshot_price_factor": 1.037231485318966,
+      "previous_date_alignment_relative_error": 3.7722966195197216e-08,
+      "source_snapshot_sha256": "d8fc17932175afb945e3309178985e5ec3b86a8845dbfe40608bb7cb9b70ad15",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 15.91512191963437,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.000831",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 29.28,
+      "original_to_snapshot_price_factor": 1.0005645837331205,
+      "previous_date_alignment_relative_error": 2.6530789498657725e-07,
+      "source_snapshot_sha256": "593a6c115a73254ffad929125936cf9e18a71766cab85d86118bb8d3b0379386",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 29.35000778678672,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.002192",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 34.26421115,
+      "original_to_snapshot_price_factor": 1.0024403702844176,
+      "previous_date_alignment_relative_error": 7.050114820827957e-07,
+      "source_snapshot_sha256": "4cba891dc0a45f19db71b8d16e1a215b3bb73bc60108095252666f4d9849d5f1",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 34.26418699333772,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.002240",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 14.7,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "5364a255bdec23788075ed0f116fadb0cb4c3f8507f32a7bc3cdde50bf1a5833",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 14.68,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.002432",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 42.1474823,
+      "original_to_snapshot_price_factor": 1.0195284825756679,
+      "previous_date_alignment_relative_error": 1.7492785397976718e-07,
+      "source_snapshot_sha256": "a7ac198d4ed3f9f0cc79ccc28b8aa124e96b2ab4dd36dfd2dc7da7588d33672d",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 41.98824007508599,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.300118",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 13.44,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "dc739930a04d27676978df79b84869fd359f7c9414aba74f232162dd827a326a",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 13.14,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 11,
+      "to_fold": 12,
+      "symbol": "sz.300142",
+      "previous_test_end": "2024-12-18",
+      "previous_close": 12.98306594,
+      "original_to_snapshot_price_factor": 1.00967699977441,
+      "previous_date_alignment_relative_error": 2.7311036654431575e-07,
+      "source_snapshot_sha256": "dec442b8a50d67ca4290ec9b33446cbf20c1b4884b2d129fc5e67f4022c53292",
+      "daily": [
+        {
+          "date": "2024-12-19",
+          "close": 13.042846257862504,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.600031",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 17.70848275,
+      "original_to_snapshot_price_factor": 1.009589761591273,
+      "previous_date_alignment_relative_error": 1.3613855376348738e-07,
+      "source_snapshot_sha256": "f9fac0245f3512f700f5482104ae189d81e5483b776b0601ce960259bfe6c08c",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 17.49144046874027,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.600089",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 11.69063648,
+      "original_to_snapshot_price_factor": 1.0166286362801302,
+      "previous_date_alignment_relative_error": 4.852760870921458e-07,
+      "source_snapshot_sha256": "05e1ff55b6aea4913cc4aa6612572044bc771dec30c69132060e3901446accb0",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 11.680842788430933,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.600111",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 24.9,
+      "original_to_snapshot_price_factor": 1.0027673316651642,
+      "previous_date_alignment_relative_error": 3.0617023172307967e-07,
+      "source_snapshot_sha256": "cfa7bb9a006f3c0a063151b584e3b7eb732c1ec28441d6b0765b218a57992dbe",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 24.859992388608042,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.600309",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 54.26,
+      "original_to_snapshot_price_factor": 1.0271606869475352,
+      "previous_date_alignment_relative_error": 5.040632684583102e-07,
+      "source_snapshot_sha256": "908d9511d719baac605ca0788544e579a650d0700bcbe7b31ec4551d099be09a",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 53.98002720933523,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.600702",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 51.4,
+      "original_to_snapshot_price_factor": 1.0076980565614706,
+      "previous_date_alignment_relative_error": 2.51107397541972e-07,
+      "source_snapshot_sha256": "d055032ef92e0090c7ddde669ea311d0ef210733501feec844a9e097c7e522fe",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 50.420012660834985,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.600703",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 12.4000038,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "0916e64a45022cabbd798ec225f1872a71f60514c308d82fa1996357fdde6d74",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 12.35,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.600745",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 33.53,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "514227002d1e034b153c26ad973af3615749a76f60afc32c1d6bf0c705ba4898",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 33.46,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.601166",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 22.66556736,
+      "original_to_snapshot_price_factor": 1.027337224289178,
+      "previous_date_alignment_relative_error": 1.373248783576031e-07,
+      "source_snapshot_sha256": "1fe3720c7a0d3e3e1d590a655bdc924499ea637b3481a656802200d3801ca649",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 22.869496059448807,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.601788",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 17.75925954,
+      "original_to_snapshot_price_factor": 1.0116837111036234,
+      "previous_date_alignment_relative_error": 5.983615603000203e-09,
+      "source_snapshot_sha256": "b14717ac2f05bdae7a12a75278f4381213f50a306a26700f6163e509a18c2176",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 17.571592064858347,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.603799",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 37.02,
+      "original_to_snapshot_price_factor": 1.0086487781248363,
+      "previous_date_alignment_relative_error": 3.851475841587515e-07,
+      "source_snapshot_sha256": "91713a244cc5d391724b133311786c7a390cc56978f03382f3d25255b62b8932",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 38.07998533358,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sh.603993",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 8.42,
+      "original_to_snapshot_price_factor": 1.0192713283443013,
+      "previous_date_alignment_relative_error": 3.4660704195665915e-08,
+      "source_snapshot_sha256": "ae67223ed7ddd1795ab81c138b0ab2304e8d4682b62899ff18c89de980844951",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 8.519999704690798,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sz.000792",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 17.08,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "2837d9b42e239ba6cb96b4d99772a48eb1893531e88168b27d646b03dfc139a5",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 17.01,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sz.002050",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 26.32230694,
+      "original_to_snapshot_price_factor": 1.0101212944518125,
+      "previous_date_alignment_relative_error": 3.359455413853851e-08,
+      "source_snapshot_sha256": "c95466ad0f1d474ae291d8896415a7e3a2374c97d5ec330e5d6ae879566b7a80",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 26.202568499736365,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sz.002176",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 7.26,
+      "original_to_snapshot_price_factor": 1.0,
+      "previous_date_alignment_relative_error": 0.0,
+      "source_snapshot_sha256": "2cdc82e5a7471f558cd69ca34716dd6db8e3da68312a4cc8fcc6f1ce628aae83",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 7.21,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sz.002594",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 109.33347737,
+      "original_to_snapshot_price_factor": 1.0037561362622105,
+      "previous_date_alignment_relative_error": 1.013148734907432e-06,
+      "source_snapshot_sha256": "77f7299935ae249017e9cd2aed23d6ead1d5de139edead13280c8981e8bfd16f",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 109.14560479915653,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sz.002603",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 13.8573108,
+      "original_to_snapshot_price_factor": 1.0324042782246703,
+      "previous_date_alignment_relative_error": 3.966524741993993e-08,
+      "source_snapshot_sha256": "1aff8072a582b61bc64f8fd77fac63ba17c5255faf7ac122f7a31ea06dc686a0",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 13.945761166837912,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sz.002709",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 18.099615,
+      "original_to_snapshot_price_factor": 1.0084907254043987,
+      "previous_date_alignment_relative_error": 2.3392549852729871e-07,
+      "source_snapshot_sha256": "2c49080a62ef581d1c1f5032239ed6a9e9dcf2bda9e1b50afce1404e35963979",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 17.929802055761137,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    },
+    {
+      "from_fold": 12,
+      "to_fold": 13,
+      "symbol": "sz.002812",
+      "previous_test_end": "2025-06-30",
+      "previous_close": 29.29,
+      "original_to_snapshot_price_factor": 1.0090666863646196,
+      "previous_date_alignment_relative_error": 2.2218763340298153e-07,
+      "source_snapshot_sha256": "02b1640b7862ddd245836d85ebb9630bafbbef534ebd518c583a0e9db3bc0afb",
+      "daily": [
+        {
+          "date": "2025-07-01",
+          "close": 28.90000642122261,
+          "trade_status": 1,
+          "is_st": 0
+        }
+      ]
+    }
+  ]
+}

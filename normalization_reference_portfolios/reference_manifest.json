@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "purpose": "training_only_common_objective_normalization",
+  "seed": 271828,
+  "generation_rule": "same four-stratum capped-simplex projection as stage1_probes, independent PCG64 stream",
+  "sample_time": "first validation date, using only preceding 61 closes and volumes",
+  "source_manifest_sha256": "99cf5e68b65bdaf055c45c5747b822e8d0c6e1cfe2f8f9708d5c7aedc57a0344",
+  "folds": [
+    {
+      "fold": 1,
+      "file": "fold_01_reference.npz",
+      "sha256": "dd186840d61cc566fddc78d8a2381d93f7e6d0db848b5ae5f98ddf3816d8c9a8",
+      "panel_sha256": "58593d86d98c81cdd0709b37e640bd4cc47dfdb0bf4b02866dd5ecd723bd6f29",
+      "cutoff_date": "2018-09-20",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 2,
+      "file": "fold_02_reference.npz",
+      "sha256": "1df88aa94fe21796931909c9be5954bd3b104da579c495e35907c3b2ac2f2545",
+      "panel_sha256": "12aa09ded06f74daef5f7ce73eff96a49b629ad460d65b1916f2824576bafb57",
+      "cutoff_date": "2019-04-03",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 3,
+      "file": "fold_03_reference.npz",
+      "sha256": "2c51dba16e4d7b9594f3b732e6123f517fbbd745fead5f240e4397fd5777f7b2",
+      "panel_sha256": "777083c9b671c17aeeed918e3ec3ad1c3562783683110be286533ba4b01fceba",
+      "cutoff_date": "2019-10-11",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 4,
+      "file": "fold_04_reference.npz",
+      "sha256": "e45d2f1161631706a2a03baf8ef215d37fe0c4b609ce8dd8216dbb64aba972a9",
+      "panel_sha256": "40046eeb02ee96328db8360366c8c275f9416d113633d260541eb0689e6b9b34",
+      "cutoff_date": "2020-04-16",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 5,
+      "file": "fold_05_reference.npz",
+      "sha256": "967dfe31efd3532b02441daf4798c0467e1e14a7396c9a842829c0c2887362a6",
+      "panel_sha256": "13997aac6857a03c36e1a1ba38da1e23aa2eb3efb6b1ee6b7274dfb0af59b5ed",
+      "cutoff_date": "2020-10-26",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 6,
+      "file": "fold_06_reference.npz",
+      "sha256": "4a7857c751d89d924992055d51eb09d14ac6dad0f5a834a40f74ac436ba0011d",
+      "panel_sha256": "95cae63f918b73121ee21a5034fe7b74594ee5d8956d4e7b300a991cd23614e6",
+      "cutoff_date": "2021-04-29",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 7,
+      "file": "fold_07_reference.npz",
+      "sha256": "1b1d5a4398d632dc904dc7081ff4d3b85d20ba36760799f1175536a625c06bae",
+      "panel_sha256": "a121177c3999a58bf4a5c803dc627515514a1df9e4e52e66d5c3126c3a01fc7a",
+      "cutoff_date": "2021-11-08",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 8,
+      "file": "fold_08_reference.npz",
+      "sha256": "4b443fba75d1c7b046205fc37d56ff202160e79a4880754aeb84420c317f9dd6",
+      "panel_sha256": "ca64079f93fe9dfd0c9a74ff085f7025d6dbf0a9111a8054a27cc00467449be7",
+      "cutoff_date": "2022-05-18",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 9,
+      "file": "fold_09_reference.npz",
+      "sha256": "e5264fd502937fcc9f25db008ef00edc125818277b4c4a5ab8f1d534970edcce",
+      "panel_sha256": "af5dbdc068114bc828dea93780f1a8b5e3592495fc694ca8b4122270b8bc5447",
+      "cutoff_date": "2022-11-21",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 10,
+      "file": "fold_10_reference.npz",
+      "sha256": "bd9f92a4a4bed8b6d6f7e9f2f10ed7e21a4228087c1524e25cde9dda75784714",
+      "panel_sha256": "81c2806817ec812a35b39504a29660958a739079cf0edc3272f250574ebf1800",
+      "cutoff_date": "2023-05-30",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 11,
+      "file": "fold_11_reference.npz",
+      "sha256": "13695029a869983f23feb5961423da06feca4ef8b7d7f5f9de9bb19b2970d414",
+      "panel_sha256": "ee56a90e3801f54f2d1ee9cd43770c46d4b70feaea58ae2ae42941023c00f852",
+      "cutoff_date": "2023-12-04",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 12,
+      "file": "fold_12_reference.npz",
+      "sha256": "0f6dbfdbe8beb08976afca4ab345f1e91f9d8bf734a5d1e5bf44fe3a74b3346f",
+      "panel_sha256": "420e159fcfa3d0c6b3cf707ae408009a2b619d9767da53b0fef9c748b5b8d6b5",
+      "cutoff_date": "2024-06-14",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    },
+    {
+      "fold": 13,
+      "file": "fold_13_reference.npz",
+      "sha256": "74578e0a434f2cfd438596fff14002528fb06bf5eea32e7caf82ec68d06dcba5",
+      "panel_sha256": "dbae4a2b6df064f6e5dc5cd22a1ae228004af26221557dc53729297cfe6b59eb",
+      "cutoff_date": "2024-12-18",
+      "count": 100,
+      "group_counts": {
+        "MKT": 25,
+        "VOL": 25,
+        "LIQ": 25,
+        "MOM": 25
+      }
+    }
+  ]
+}
