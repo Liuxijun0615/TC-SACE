@@ -1,13 +1,38 @@
-"""Core TC-SACE-PM portfolio and stress-scenario co-evolution (requires NumPy).
+"""TC-SACE core, aligned with main-dc-1-codex.tex and its supplement (2026-11).
 
-Narratives do not enter the numeric objectives. The default narrative provider
-uses fixed templates and does not require an external service.
+Requires Python >= 3.10 and NumPy. Numerical training uses the final 126 training
+days, with stress on the final 20 days only. All CR/CVaR objectives use all 126
+days. Defaults implement the paper's 100/40 populations and 200 generations.
+
+Example using the frozen data distributed with this repository::
+
+    panel = MarketPanel.from_prepared_fold("data/folds/fold_01.npz")
+    result = TCSACE(Config(seed=42)).fit(panel.training_data())
+    references = panel.load_normalization_references(
+        "normalization_reference_portfolios")
+    low, scale = training_reference_scale(references, panel.training_data())
+    validation = reference_objectives(result.portfolio_archive,
+                                      panel.validation_data())
+    # Supply the normalized common ideal from ALL comparison archives for
+    # this fold/seed. A TC-SACE-only ideal does not reproduce the paper's table.
+    weights = result.balanced_weights(validation, low, scale, common_ideal)
+
+Training fitness, validation selection and reference HV are frictionless fixed-
+weight calculations, as in the paper. They are not net trading backtests: the
+separate experiment executor handles 10 bp fees, next-close orders, frozen
+suspended holdings, cash and cross-fold transitions. Baselines, experiment
+orchestration and paid DeepSeek evaluation are outside this core module.
+Numerical runs use deterministic template text; NarrativeProvider exposes the
+optional semantic operations without access to fitness or the numerical RNG.
 """
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
+import hashlib
+import json
 from math import ceil
+from pathlib import Path
 from typing import Callable, Protocol
 
 import numpy as np
@@ -15,6 +40,11 @@ import numpy as np
 
 TEMPLATES = ("MKT", "VOL", "LIQ", "MOM")
 NORMALIZATION_EPSILON = 1e-12
+EVALUATION_DAYS = 126
+EVENT_DAYS = 20
+TRAINING_DAYS = 504
+PAIRED_SEEDS = (42, 101, 202, 303, 404, 505, 606, 707, 808, 909,
+                1001, 1102, 1203, 1304, 1405, 1506, 1607, 1708, 1809, 1910)
 FALLBACK_NARRATIVES = {
     "MKT": "A broad market sell-off places downward pressure on all stocks.",
     "VOL": "A rise in risk aversion places concentrated downward pressure on stocks with high recent volatility.",
@@ -43,6 +73,11 @@ class Config:
     seed: int = 42
 
     def __post_init__(self) -> None:
+        numeric = (self.max_weight, self.alpha_min, self.alpha_max, self.beta,
+                   self.elite_fraction, self.weight_mutation_sigma,
+                   self.alpha_mutation_sigma, self.template_mutation_probability)
+        if not np.all(np.isfinite(numeric)) or min(self.weight_mutation_sigma, self.alpha_mutation_sigma) < 0:
+            raise ValueError("numeric settings must be finite and mutation scales nonnegative")
         if self.universe_size < 2 or self.window < 2:
             raise ValueError("universe_size and window must be at least 2")
         if not 0 < self.max_weight <= 1 or self.universe_size * self.max_weight < 1:
@@ -97,11 +132,16 @@ def safe_narrative(provider: NarrativeProvider, template: str, candidate: str | 
         proposed = provider.initial(template) if candidate is None else candidate
         if not isinstance(proposed, str) or not proposed.strip():
             raise ValueError("empty narrative")
-        if provider.consistent(proposed, template):
+        verdict = provider.consistent(proposed, template)
+        if type(verdict) not in (bool, int) or verdict not in (0, 1):
+            raise ValueError("consistency judgment must be binary")
+        if verdict == 1:
             return proposed
         repaired = provider.repair(proposed, template)
-        if isinstance(repaired, str) and repaired.strip() and provider.consistent(repaired, template):
-            return repaired
+        if isinstance(repaired, str) and repaired.strip():
+            verdict = provider.consistent(repaired, template)
+            if type(verdict) in (bool, int) and verdict == 1:
+                return repaired
     except (Exception):  # An explanation service must not stop numeric evolution.
         pass
     return FALLBACK_NARRATIVES[template]
@@ -132,11 +172,83 @@ class MarketPanel:
     close: np.ndarray
     volume: np.ndarray
     train_end: int  # Exclusive index into dates; no later row is used for fitting.
+    source_panel_sha256: str | None = None
+    source_manifest_sha256: str | None = None
+
+    @classmethod
+    def from_prepared_fold(cls, path: str | Path) -> MarketPanel:
+        """Read a frozen 61+504+126+126 panel, verifying its published manifest.
+
+        Universe membership, historical security type/status and missing-row
+        reconciliation were resolved during data preparation. Do not reselect
+        stocks from the current raw CSV directory or forward-fill unknown gaps.
+        """
+        path = Path(path)
+        manifest_bytes = (path.parent / "stage1_manifest.json").read_bytes()
+        manifest = json.loads(manifest_bytes)
+        matches = [row for row in manifest["folds"] if row["panel_file"] == path.name]
+        if len(matches) != 1:
+            raise ValueError("panel is not uniquely identified by the stage-one manifest")
+        row = matches[0]
+        if hashlib.sha256(path.read_bytes()).hexdigest() != row["panel_sha256"]:
+            raise ValueError("panel SHA-256 mismatch")
+        with np.load(path, allow_pickle=False) as saved:
+            dates = tuple(map(str, saved["dates"]))
+            symbols = tuple(map(str, saved["symbols"]))
+            close, volume = saved["close"].copy(), saved["volume"].copy()
+            if (int(saved["fold"]) != row["fold"]
+                    or not np.array_equal(saved["phase"], np.repeat(np.arange(4), (61, 504, 126, 126)))):
+                raise ValueError("invalid fold or phase boundaries")
+            for key in ("trade_status", "is_st"):
+                if saved[key].shape != (817, 100) or not np.all(np.isin(saved[key], (0, 1))):
+                    raise ValueError(f"invalid {key} field")
+        if (len(dates) != 817 or dates != tuple(sorted(set(dates)))
+                or symbols != tuple(row["symbols"]) or len(set(symbols)) != 100
+                or symbols != tuple(sorted(symbols))
+                or close.shape != (817, 100) or volume.shape != close.shape
+                or not np.all(np.isfinite(close)) or np.any(close <= 0)
+                or not np.all(np.isfinite(volume)) or np.any(volume < 0)):
+            raise ValueError("invalid frozen market axes or prices/volume")
+        for name, start, end in (("preheat", 0, 61), ("train", 61, 565),
+                                 ("validation", 565, 691), ("test", 691, 817)):
+            first, last = row["dates"].get(name + "_start"), row["dates"].get(name + "_end")
+            if (first is not None and dates[start] != first) or (last is not None and dates[end - 1] != last):
+                raise ValueError("panel dates differ from manifest")
+        return cls(dates, symbols, close, volume, 565, row["panel_sha256"],
+                   hashlib.sha256(manifest_bytes).hexdigest())
+
+    def load_normalization_references(self, directory: str | Path) -> np.ndarray:
+        """Load independent seed-271828 references, never scenario probes."""
+        directory = Path(directory)
+        metadata = json.loads((directory / "reference_manifest.json").read_text(encoding="utf-8"))
+        if metadata["seed"] != 271828 or metadata["purpose"] != "training_only_common_objective_normalization":
+            raise ValueError("independent training references required")
+        matches = [row for row in metadata["folds"] if row["cutoff_date"] == self.dates[self.train_end - 1]]
+        if len(matches) != 1:
+            raise ValueError("reference fold not found")
+        row = matches[0]
+        if (self.source_panel_sha256 is None or row["panel_sha256"] != self.source_panel_sha256
+                or metadata["source_manifest_sha256"] != self.source_manifest_sha256):
+            raise ValueError("normalization references are bound to a different frozen panel")
+        path = directory / row["file"]
+        if hashlib.sha256(path.read_bytes()).hexdigest() != row["sha256"]:
+            raise ValueError("reference SHA-256 mismatch")
+        with np.load(path, allow_pickle=False) as saved:
+            weights = saved["weights"].copy()
+            if (tuple(map(str, saved["symbols"])) != self.symbols or int(saved["seed"]) != 271828
+                    or str(saved["source_panel_sha256"]) != row["panel_sha256"]
+                    or str(saved["cutoff_date"]) != self.dates[self.train_end - 1]
+                    or tuple(map(str, saved["groups"])) != tuple(t for t in TEMPLATES for _ in range(25))
+                    or weights.shape != (100, len(self.symbols))):
+                raise ValueError("reference metadata mismatch")
+        validate_weights(weights, len(self.symbols))
+        return weights
 
     @classmethod
     def select_universe(
         cls, dates: list[str] | tuple[str, ...], symbols: list[str] | tuple[str, ...],
         close: np.ndarray, volume: np.ndarray, train_end: int, config: Config,
+        *, eligible_at_train_end: np.ndarray,
     ) -> MarketPanel:
         close = np.asarray(close, dtype=float)
         volume = np.asarray(volume, dtype=float)
@@ -144,17 +256,22 @@ class MarketPanel:
             raise ValueError("close and volume must be T x N arrays matching dates and symbols")
         if len(set(dates)) != len(dates) or list(dates) != sorted(dates) or len(set(symbols)) != len(symbols):
             raise ValueError("dates must be sorted and unique; symbols must be unique")
-        if not config.window + 2 <= train_end <= len(dates):
-            raise ValueError("training period must contain at least window+2 dates")
+        train_start = train_end - TRAINING_DAYS
+        if train_start < config.window + 1 or train_end > len(dates):
+            raise ValueError("504 training days plus window+1 warm-up prices required")
         if len(symbols) < config.universe_size:
             raise ValueError("too few candidate symbols")
-        training_complete = np.all(np.isfinite(close[:train_end]) & (close[:train_end] > 0)
-                                   & np.isfinite(volume[:train_end]) & (volume[:train_end] >= 0), axis=0)
+        eligible = np.asarray(eligible_at_train_end)
+        if eligible.shape != (len(symbols),) or eligible.dtype != np.bool_:
+            raise ValueError("supply a boolean historical A-share eligibility mask for the training cutoff")
+        lookback = slice(train_start - config.window - 1, train_end)
+        training_complete = eligible & np.all(np.isfinite(close[lookback]) & (close[lookback] > 0)
+                                   & np.isfinite(volume[lookback]) & (volume[lookback] >= 0), axis=0)
         if training_complete.sum() < config.universe_size:
             raise ValueError("too few stocks with complete training OHLCV data")
-        turnover = np.mean(close[:train_end] * volume[:train_end], axis=0)
+        turnover = np.mean(close[train_start:train_end] * volume[train_start:train_end], axis=0)
         indices = sorted(np.flatnonzero(training_complete), key=lambda i: (-turnover[i], str(symbols[i])))
-        chosen = indices[:config.universe_size]
+        chosen = sorted(indices[:config.universe_size], key=lambda i: str(symbols[i]))
         selected_close = close[:, chosen].copy()
         selected_volume = volume[:, chosen].copy()
         if not np.all(np.isfinite(selected_close) & (selected_close > 0)):
@@ -167,7 +284,7 @@ class MarketPanel:
     def window_data(self, start: int, end: int, window: int) -> EvaluationData:
         if start < window + 1 or start >= end or end > len(self.dates):
             raise ValueError("evaluation range needs prior window returns and at least one day")
-        returns_all = np.empty_like(self.close)
+        returns_all = np.empty_like(self.close, dtype=float)
         returns_all[0] = np.nan
         returns_all[1:] = self.close[1:] / self.close[:-1] - 1
         times = np.arange(start, end)
@@ -179,11 +296,18 @@ class MarketPanel:
         return EvaluationData(tuple(self.dates[start:end]), returns_all[start:end], sigma,
                               liquidity, momentum)
 
-    def training_data(self, window: int) -> EvaluationData:
-        return self.window_data(window + 1, self.train_end, window)
+    def training_data(self, window: int = 60) -> EvaluationData:
+        """Evolution uses only the final 126 training days (Supplement S2)."""
+        return replace(self.window_data(self.train_end - EVALUATION_DAYS, self.train_end, window), split="evolution")
 
-    def holdout_data(self, window: int) -> EvaluationData:
-        return self.window_data(self.train_end, len(self.dates), window)
+    def validation_data(self, window: int = 60) -> EvaluationData:
+        return replace(self.window_data(self.train_end, self.train_end + EVALUATION_DAYS, window), split="validation")
+
+    def test_data(self, window: int = 60) -> EvaluationData:
+        return replace(self.window_data(self.train_end + EVALUATION_DAYS, self.train_end + 2 * EVALUATION_DAYS, window), split="test")
+
+    def holdout_data(self, window: int = 60) -> EvaluationData:
+        raise ValueError("use validation_data() or test_data(); the two periods must stay separate")
 
 
 @dataclass(frozen=True)
@@ -194,17 +318,24 @@ class EvaluationData:
     liquidity: np.ndarray
     momentum: np.ndarray
     event_mask: np.ndarray | None = None
+    split: str | None = None
 
     def __post_init__(self) -> None:
         shape = self.returns.shape
         if len(shape) != 2 or not all(x.shape == shape for x in (self.sigma, self.liquidity, self.momentum)):
             raise ValueError("evaluation arrays must have the same T x N shape")
-        if shape[0] < 1 or not all(np.all(np.isfinite(x)) for x in
+        if shape[0] < 1 or shape[1] < 1 or len(self.dates) != shape[0] or not all(np.all(np.isfinite(x)) for x in
                                   (self.returns, self.sigma, self.liquidity, self.momentum)):
             raise ValueError("evaluation arrays must be nonempty and finite")
         if np.any(self.returns <= -1) or np.any(self.sigma < 0):
             raise ValueError("invalid daily returns or volatility")
-        if self.event_mask is not None:
+        if self.event_mask is None:
+            if shape[0] < EVENT_DAYS:
+                raise ValueError("default stress event needs at least 20 dates")
+            event = np.zeros(shape[0], dtype=bool)
+            event[-EVENT_DAYS:] = True
+            object.__setattr__(self, "event_mask", event)
+        else:
             if self.event_mask.shape != (shape[0],) or self.event_mask.dtype != np.bool_:
                 raise ValueError("event mask must be a boolean vector matching evaluation dates")
 
@@ -224,7 +355,7 @@ class EvaluationData:
         full_norm = np.linalg.norm(self.sigma, axis=1)
         targeted_norm = np.linalg.norm(targeted_sigma, axis=1)
         gamma = full_norm / np.maximum(targeted_norm, NORMALIZATION_EPSILON)
-        event = 1 if self.event_mask is None else self.event_mask[:, None]
+        event = self.event_mask[:, None]
         stressed = self.returns - event * scenario.alpha * gamma[:, None] * targeted_sigma
         if np.any(stressed <= -1):
             raise ValueError("stress return <= -100%; paper's unclipped compounding is undefined")
@@ -234,8 +365,9 @@ class EvaluationData:
 def return_metrics(daily: np.ndarray, beta: float = 0.95) -> tuple[np.ndarray, np.ndarray]:
     """Cumulative return and manuscript CVaR, with quantile-inclusive tail."""
     daily = np.asarray(daily, dtype=float)
-    if daily.ndim < 1 or daily.shape[-1] < 1 or np.any(daily <= -1):
-        raise ValueError("daily returns must be nonempty and greater than -1")
+    if (daily.ndim < 1 or daily.shape[-1] < 1 or not np.all(np.isfinite(daily))
+            or np.any(daily <= -1) or not 0 < beta < 1):
+        raise ValueError("finite daily returns > -1 and 0 < beta < 1 required")
     cr = np.expm1(np.log1p(daily).sum(axis=-1))
     losses = -daily
     var = np.quantile(losses, beta, axis=-1, keepdims=True)
@@ -253,17 +385,27 @@ class PortfolioEvaluation:
     stress_losses: np.ndarray  # scenario x portfolio
 
 
+def validate_weights(weights: np.ndarray, assets: int, cap: float = 0.1) -> None:
+    if (weights.ndim != 2 or weights.shape[1] != assets or len(weights) == 0
+            or not np.all(np.isfinite(weights)) or np.any(weights < -1e-10)
+            or np.any(weights > cap + 1e-10)
+            or not np.allclose(weights.sum(axis=1), 1.0, atol=1e-10, rtol=0)):
+        raise ValueError("weights must be finite P x N, sum to 1 and satisfy 0 <= w <= cap")
+
+
 def evaluate_portfolios(weights: np.ndarray, scenarios: list[Scenario], data: EvaluationData,
-                        target_fraction: float = 0.3) -> PortfolioEvaluation:
+                        target_fraction: float = 0.3, *, beta: float = 0.95,
+                        max_weight: float = 0.1) -> PortfolioEvaluation:
     weights = np.asarray(weights, dtype=float)
-    if weights.ndim != 2 or weights.shape[1] != data.returns.shape[1] or len(scenarios) < 1:
-        raise ValueError("weights must be P x N and at least one scenario is required")
+    validate_weights(weights, data.returns.shape[1], max_weight)
+    if len(scenarios) < 1:
+        raise ValueError("at least one scenario is required")
     normal_daily = weights @ data.returns.T
-    cr, cvar = return_metrics(normal_daily)
+    cr, cvar = return_metrics(normal_daily, beta)
     masks = data.masks(target_fraction)
     stressed = np.stack([data.stressed_returns(s, masks) for s in scenarios])
     stressed_daily = np.einsum("stn,pn->spt", stressed, weights, optimize=True)
-    stressed_cr, stressed_cvar = return_metrics(stressed_daily)
+    stressed_cr, stressed_cvar = return_metrics(stressed_daily, beta)
     stress_losses = -stressed_cr + stressed_cvar
     adv = stress_losses.max(axis=0)
     return PortfolioEvaluation(np.column_stack((-cr, cvar, adv)), cr, cvar, adv, stress_losses)
@@ -354,12 +496,102 @@ def tournament(ranks: np.ndarray, crowding: np.ndarray, rng: np.random.Generator
     return int(a if rng.random() < 0.5 else b)
 
 
-def balanced_index(objectives: np.ndarray) -> int:
-    """Reproducible, training-only representative of the Pareto archive."""
+def reference_grid() -> list[Scenario]:
+    """Paper's fixed 4 x 5 external library; distinct from evolving scenarios."""
+    return [Scenario(template, float(alpha), FALLBACK_NARRATIVES[template])
+            for template in TEMPLATES for alpha in np.linspace(0.25, 2.0, 5)]
+
+
+def require_paper_period(data: EvaluationData) -> None:
+    event = np.zeros(EVALUATION_DAYS, dtype=bool)
+    event[-EVENT_DAYS:] = True
+    if len(data.dates) != EVALUATION_DAYS or not np.array_equal(data.event_mask, event):
+        raise ValueError("paper protocol requires 126 dates with stress only on the final 20")
+
+
+def reference_objectives(weights: np.ndarray, data: EvaluationData) -> np.ndarray:
+    """Frictionless [-CR, CVaR95, AdvRisk_ref] on a full paper evaluation period."""
+    require_paper_period(data)
+    return evaluate_portfolios(weights, reference_grid(), data).objectives
+
+
+def training_reference_scale(reference_weights: np.ndarray,
+                             training_data: EvaluationData) -> tuple[np.ndarray, np.ndarray]:
+    """Fit scales to independent seed-271828 references on TRAINING data only.
+
+    Use MarketPanel.load_normalization_references(), not scenario evaluation
+    probes or the evolved archive, as the reference_weights argument.
+    """
+    if training_data.split not in (None, "evolution"):
+        raise ValueError("normalization must use training evolution data, never validation/test")
+    if np.shape(reference_weights) != (100, training_data.returns.shape[1]):
+        raise ValueError("100 independent normalization references required")
+    objectives = reference_objectives(reference_weights, training_data)
     low, high = objectives.min(axis=0), objectives.max(axis=0)
-    scale = np.where(high > low, high - low, 1)
-    distances = np.linalg.norm((objectives - low) / scale, axis=1)
+    return low, np.where(high > low, high - low, 1.0)
+
+
+def normalize_objectives(objectives: np.ndarray, low: np.ndarray,
+                         scale: np.ndarray) -> np.ndarray:
+    values, low, scale = map(lambda x: np.asarray(x, dtype=float), (objectives, low, scale))
+    if (values.ndim != 2 or values.shape[1] != 3 or not len(values)
+            or low.shape != (3,) or scale.shape != (3,) or np.any(scale <= 0)
+            or not all(np.all(np.isfinite(x)) for x in (values, low, scale))):
+        raise ValueError("finite N x 3 objectives, three origins and positive scales required")
+    return (values - low) / scale  # Linear extrapolation; NEVER clip to [0, 1].
+
+
+def validation_common_ideal(validation_candidates: dict[str, np.ndarray],
+                            low: np.ndarray, scale: np.ndarray) -> np.ndarray:
+    """Normalized minimum over the full comparison candidate union, per fold/seed.
+
+    Callers must supply every method/ablation's VALIDATION objective array.
+    This helper does not implement or train those other methods.
+    """
+    if not validation_candidates:
+        raise ValueError("validation candidate union is empty")
+    normalized = [normalize_objectives(values, low, scale) for values in validation_candidates.values()]
+    return np.concatenate(normalized).min(axis=0)
+
+
+def balanced_index(validation_objectives: np.ndarray, low: np.ndarray,
+                   scale: np.ndarray, common_ideal: np.ndarray) -> int:
+    """Validation selection with fixed TRAINING scales and a shared ideal point.
+
+    common_ideal is already normalized. Ties keep the first candidate index.
+    The old one-argument, archive-self-normalized training selector is removed.
+    """
+    normalized = normalize_objectives(validation_objectives, low, scale)
+    ideal = np.asarray(common_ideal, dtype=float)
+    if ideal.shape != (3,) or not np.all(np.isfinite(ideal)):
+        raise ValueError("three finite coordinates for the shared validation ideal required")
+    distances = np.linalg.norm(normalized - ideal, axis=1)
     return int(np.argmin(distances))
+
+
+def hypervolume_3d(normalized_objectives: np.ndarray,
+                   reference: tuple[float, float, float] = (1.1, 1.1, 1.1)) -> tuple[float, float]:
+    """Exact minimization HV and outside-reference fraction (Supplement S2).
+
+    Supply reference_objectives() transformed with the training-only scales.
+    Points reaching/exceeding the reference in any dimension contribute zero.
+    Negative normalized coordinates remain valid; HV can be greater than one.
+    """
+    values = normalize_objectives(normalized_objectives, np.zeros(3), np.ones(3))
+    ref = np.asarray(reference, dtype=float)
+    if ref.shape != (3,) or not np.all(np.isfinite(ref)):
+        raise ValueError("three finite HV reference coordinates required")
+    inside = np.all(values < ref, axis=1)
+    points = values[inside]
+    volume = 0.0
+    x_steps = np.r_[np.unique(points[:, 0]), ref[0]]
+    for x, next_x in zip(x_steps[:-1], x_steps[1:]):
+        active = points[points[:, 0] <= x, 1:]
+        y_steps = np.r_[np.unique(active[:, 0]), ref[1]]
+        area = sum((next_y - y) * (ref[2] - active[active[:, 0] <= y, 1].min())
+                   for y, next_y in zip(y_steps[:-1], y_steps[1:]))
+        volume += (next_x - x) * area
+    return float(volume), float(1 - inside.mean())
 
 
 @dataclass
@@ -376,8 +608,12 @@ class EvolutionResult:
     portfolio_evaluations: int = 0
     scenario_evaluations: int = 0
 
-    def balanced_weights(self) -> np.ndarray:
-        return self.portfolio_archive[balanced_index(self.portfolio_archive_objectives)].copy()
+    def balanced_weights(self, validation_objectives: np.ndarray, low: np.ndarray,
+                         scale: np.ndarray, common_ideal: np.ndarray) -> np.ndarray:
+        if len(validation_objectives) != len(self.portfolio_archive):
+            raise ValueError("validation objectives must follow the archive's candidate order")
+        index = balanced_index(validation_objectives, low, scale, common_ideal)
+        return self.portfolio_archive[index].copy()
 
 
 class TCSACE:
@@ -428,6 +664,9 @@ class TCSACE:
     def fit(self, data: EvaluationData,
             progress: Callable[[dict[str, float | int]], None] | None = None) -> EvolutionResult:
         cfg = self.config
+        require_paper_period(data)
+        if data.split not in (None, "evolution"):
+            raise ValueError("fit must use training evolution data, never validation/test")
         if data.returns.shape[1] != cfg.universe_size:
             raise ValueError("evaluation data does not match selected universe size")
         weights = np.stack([project_weights(self.rng.random(cfg.universe_size), cfg.max_weight)
@@ -441,7 +680,7 @@ class TCSACE:
         portfolio_evaluations = 0
         scenario_evaluations = 0
         for generation in range(cfg.generations):
-            parents_p = evaluate_portfolios(weights, scenarios, data)
+            parents_p = evaluate_portfolios(weights, scenarios, data, beta=cfg.beta, max_weight=cfg.max_weight)
             portfolio_evaluations += len(weights) * len(scenarios)
             elite_count = ceil(cfg.elite_fraction * cfg.portfolio_size)
             elite = np.array(nsga_order(parents_p.objectives)[0][:elite_count])
@@ -452,7 +691,7 @@ class TCSACE:
             scenario_evaluations += len(scenarios) * len(feedback_weights)
 
             children_p = self._portfolio_children(weights, parents_p.objectives)
-            children_p_eval = evaluate_portfolios(children_p, scenarios, data)
+            children_p_eval = evaluate_portfolios(children_p, scenarios, data, beta=cfg.beta, max_weight=cfg.max_weight)
             portfolio_evaluations += len(children_p) * len(scenarios)
             all_p = np.concatenate((weights, children_p))
             all_p_obj = np.concatenate((parents_p.objectives, children_p_eval.objectives))
@@ -460,7 +699,7 @@ class TCSACE:
             weights = all_p[selected_p].copy()
 
             children_s = self._scenario_children(scenarios, parents_s_obj)
-            children_s_losses = evaluate_portfolios(feedback_weights, children_s, data).stress_losses
+            children_s_losses = evaluate_portfolios(feedback_weights, children_s, data, beta=cfg.beta, max_weight=cfg.max_weight).stress_losses
             portfolio_evaluations += len(feedback_weights) * len(children_s)
             children_s_obj = evaluate_scenarios(children_s, children_s_losses, base_loss,
                                                 elite, scenario_archive, cfg)
@@ -473,7 +712,7 @@ class TCSACE:
             # Every archive candidate is scored against the same new opposing
             # population.  Objectives from the previous generation are stale.
             candidate_p = np.concatenate((portfolio_archive, weights))
-            candidate_p_obj = evaluate_portfolios(candidate_p, scenarios, data).objectives
+            candidate_p_obj = evaluate_portfolios(candidate_p, scenarios, data, beta=cfg.beta, max_weight=cfg.max_weight).objectives
             portfolio_evaluations += len(candidate_p) * len(scenarios)
             front_p = non_dominated_sort(candidate_p_obj)[0]
             distances_p = crowding_distance(candidate_p_obj, front_p)
@@ -482,9 +721,9 @@ class TCSACE:
             portfolio_archive_obj = candidate_p_obj[keep_p].copy()
 
             candidate_s = scenario_archive + scenarios
-            next_feedback_eval = evaluate_portfolios(weights, candidate_s, data)
+            next_feedback_eval = evaluate_portfolios(weights, candidate_s, data, beta=cfg.beta, max_weight=cfg.max_weight)
             portfolio_evaluations += len(weights) * len(candidate_s)
-            next_elite = np.array(nsga_order(evaluate_portfolios(weights, scenarios, data).objectives)[0][:elite_count])
+            next_elite = np.array(nsga_order(evaluate_portfolios(weights, scenarios, data, beta=cfg.beta, max_weight=cfg.max_weight).objectives)[0][:elite_count])
             portfolio_evaluations += len(weights) * len(scenarios)
             next_base = -next_feedback_eval.cumulative_return + next_feedback_eval.cvar
             candidate_s_obj = evaluate_scenarios(candidate_s, next_feedback_eval.stress_losses,
